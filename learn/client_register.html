@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+            <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">        
+
+        </head>
+
+
+
+<style>
+    body{
+        background-color: #fbe90d;
+        background-image: url(regibg.jpg);
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: 1200px 745px;
+        background-position-x: 300px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+.w-25{
+    /* border: 2px solid red; */
+    padding: 15px;
+    float: right;
+    position: absolute;
+    top: 327px;
+    right: 260px;
+
+}   
+.form-control{
+    padding: 0px;
+    margin: 5px;
+    /* border: 5px solid white; */
+    border-radius: 50px;
+    background-color: black;
+    width:300px;
+    text-align: center;
+}
+#sub{
+    margin-top: 23px;
+    background-color: #0cba34!important;
+    font-size: 18px;
+    font-weight: bold;
+}
+::placeholder{
+    color: white!important;
+    font-size: 20px;
+}
+#box{
+    /* border: 2px solid red; */
+    background-color: black;
+    display: inline-block;
+    padding: 20px 5px 0px 5px;
+    height: 745px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+img{
+    height: 90px;
+    margin: 35px 0px 5px 0px;
+}
+/* #wave{
+    height: 100%;
+} */
+#logo{
+    height:34px;
+    position: absolute;
+    right:0px;
+    top:7px;
+    margin-top: 0px;
+}
+</style>
+
+<body>
+
+    <h2 style="color: black; position: absolute; right: 50px; top: 10px; font-size: 21px;">Already have an account? &nbsp;&nbsp;<a href="http://localhost/acme_nov_pro/learn/client_login.html">Login</a></h2>
+    <img id="logo" src="logo.png" alt="loading">
+
+    
+
+    <ul type="none" id="box">
+        <li style="color:red; font-size: 30px; margin-top: 0px; text-decoration:underline;">WhyChooseUs?</li>
+        <li><img src="apf.jpg" alt="loading"><br> Affordable Price</li>
+        <li><img src="qaf.jpg" alt="loading"><br> Quality Assurance</li>
+        <li><img src="fdf.jpg" alt="loading"><br> Fast Delivery</li>
+        <li><img src="fsf.jpg" alt="loading"><br> Free Shipping</li>
+    </ul>
+
+    <!-- <img id="wave" src="ww.jpg" alt="loading"> -->
+
+    <h1 style="display: inline; font-size: 88px;position: absolute; top: 88px; right: 140px;">REGISTER HERE .....</h1>
+    <div class="box">
+    
+
+    <form method='POST' action='register.php' class='w-25 '> 
+
+        <input name='uname' placeholder="User Name" class='form-control' required> 
+        <input name='upass' placeholder="Password" type='password' class='form-control' required> 
+        <input name='mobile' placeholder="Mobile" type='number' class='form-control' required> 
+        <textarea name='address' required placeholder="Address" class='form-control'></textarea>
+
+        <input onclick="display()" type='submit' id="sub" class='form-control bg-success text-white' value="REGISTER">
+    </form>
+</div>
+
+
+</body>
+<script>
+    function display(){
+        
+    alert("Registerd Successfully!")
+    
+    
+    // window.location.href("client_login.html");
+    }
+</script>
+
+</html>
